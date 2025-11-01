@@ -6,7 +6,7 @@ const Boxes = ({position, rotation, scale}: {position: number[], rotation: numbe
     <>
         <mesh position={position} rotation={rotation} scale={scale}>
                       <boxGeometry args={[1, 1, 1]}/> {/* width, height, depth */}
-                      <meshBasicMaterial transparent color={"black"} opacity={0.9} /> {/* invisible faces */}
+                      <meshBasicMaterial transparent color={"black"} opacity={1} /> {/* invisible faces */}
                       <Edges color="white" />
         
                       <RoundedBox args={[1, 1, 1]} scale={1.2} radius={0.1} smoothness={4}>

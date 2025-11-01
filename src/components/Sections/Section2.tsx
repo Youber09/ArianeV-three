@@ -9,7 +9,7 @@ const Section2 = () => {
         
         gsap.from(`.section2-text1`, {
             scrollTrigger: {
-                markers: true,
+                // markers: true,
                 scrub: 1,
                 trigger: `.section2`,
                 end: `top top`,
@@ -21,7 +21,7 @@ const Section2 = () => {
         })
         gsap.from(`.section2-text2`, {
             scrollTrigger: {
-                markers: true,
+                // markers: true,
                 scrub: 1,
                 trigger: `.section2`,
                 end: `top top`,
