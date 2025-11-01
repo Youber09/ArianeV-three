@@ -13,19 +13,19 @@ const Camera = () => {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        markers: true,
-        scrub: true,
-        trigger: `.section2`,
-        end: `top top`
+        // markers: true,
+        scrub: 2,
+        trigger: `.section1`,
+        start: `bottom bottom`
       }
     })
 
     const tl2 = gsap.timeline({
       scrollTrigger: {
-        markers: true,
-        scrub: true,
-        trigger: `.section2`,
-        end: `top top`
+        // markers: true,
+        scrub: 2,
+        trigger: `.section1`,
+        start: `bottom bottom`
       }
     })
 
