@@ -11,15 +11,15 @@ const Section3 = () => {
                 trigger: `.section3-text1`,
                 pin: true,
                 scrub: 1,
-                start: `0vh 80%`,
-                end: `400vh 20%`,
+                start: `0% 80%`,
+                end: `100% 20%`,
                 markers: true,
             },
         })
 
         tl.from(`.section3-text1`, {        
             translateX: `-200%`,
-            duration: 4
+            duration: 2,
         })
         .from(`.section3-text1`, {
             duration: 8
@@ -32,9 +32,10 @@ const Section3 = () => {
     }, [])
 
   return (
-    <section className=" h-[400vh] flex flex-col relative justify-start items-center w-full section3 overflow-hidden">
+    <section className="h-[200vh] flex flex-col relative justify-start items-center w-full section3 overflow-hidden z-5">
       
-        <p className="Font text-[5vw]/[5vw] tracking-[-0.2vw] text-center z-5 section3-text1">ENVOYÉ POUR LA PREMIERE FOIS EN 1996</p>
+        <p className="Font text-[5vw]/[5vw] tracking-[-0.2vw] text-center z-5 section3-text1 h-full">ENVOYÉ POUR LA PREMIERE FOIS EN 1996</p>
+        {/* <p className="text-green-800 Font text-[20vw] absolute bottom-0 tracking-[-0.8vw] z-0">8.000.000.000$</p> */}
 
     </section>
   )
