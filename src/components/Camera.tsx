@@ -17,7 +17,7 @@ const Camera = () => {
         scrub: 2,
         trigger: `.section1`,
         start: `bottom bottom`,
-        end: `300% top`
+        end: `600% top`
       }
     })
 
@@ -27,7 +27,7 @@ const Camera = () => {
         scrub: 2,
         trigger: `.section1`,
         start: `bottom bottom`,
-        end: `300% top`
+        end: `600% top`
       }
     })
 
@@ -49,6 +49,24 @@ const Camera = () => {
       y:24,
       z:8,
       ease: `sine.in`
+    }).to(camera.position, {
+      duration: 1,
+      x:-1,
+      y:24,
+      z:8,
+      ease: `sine.in`
+    }).to(camera.position, {
+      duration: 1,
+      x:-1,
+      y:24,
+      z:8,
+      ease: `sine.in`
+    }).to(camera.position, {
+      duration: 1,
+      x:-1,
+      y:16,
+      z:3,
+      ease: `sine.in`
     })
     
 
@@ -68,6 +86,24 @@ const Camera = () => {
       duration: 1,
       ease: `power1.in`,
       x: RB * -18,
+      y: RB * -10,
+      z: 0
+    }).to(camera.rotation, {
+      duration: 1,
+      ease: `power1.in`,
+      x: RB * -18,
+      y: RB * -10,
+      z: 0
+    }).to(camera.rotation, {
+      duration: 1,
+      ease: `power1.in`,
+      x: RB * -18,
+      y: RB * -10,
+      z: 0
+    }).to(camera.rotation, {
+      duration: 1,
+      ease: `power1.in`,
+      x: RB * 90,
       y: RB * -10,
       z: 0
     })

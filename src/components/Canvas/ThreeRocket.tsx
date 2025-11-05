@@ -21,7 +21,7 @@ const ThreeRocket = () => {
                 scrub: 2,
                 trigger: `.section1`,
                 start: `bottom bottom`,
-                end: `300% top`
+                end: `600% top`
             }
             })
 
@@ -31,7 +31,7 @@ const ThreeRocket = () => {
                     scrub: 2,
                     trigger: `.section1`,
                     start: `bottom bottom`,
-                    end: `300% top`
+                    end: `600% top`
                 }
             })
 
@@ -40,6 +40,22 @@ const ThreeRocket = () => {
             }).to(rocketRef.current.position, {
                 duration: 1,
             }).to(rocketRef.current.position, {
+                duration: 1,
+                x: 0,
+                y: 20,
+                z: 3
+            }).to(rocketRef.current.position, {
+                duration: 1,
+                x: 0,
+                y: 20,
+                z: 3
+            }).to(rocketRef.current.position, {
+                duration: 1,
+                x: 0,
+                y: 20,
+                z: 3
+            })
+            .to(rocketRef.current.position, {
                 duration: 1,
                 x: 0,
                 y: 20,
@@ -54,6 +70,17 @@ const ThreeRocket = () => {
                 duration: 1,
                 x: RB * -30,
                 y: RB * 45,
+                z: 0
+            }).to(rocketRef.current.rotation, {
+                duration: 2,
+                x: RB * -30,
+                y: RB * 720,
+                z: 0
+            })
+            .to(rocketRef.current.rotation, {
+                duration: 1,
+                x: RB * -30,
+                y: RB * 720,
                 z: 0
             })
             

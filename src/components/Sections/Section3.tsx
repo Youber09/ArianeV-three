@@ -13,7 +13,7 @@ const Section3 = () => {
                 scrub: 1,
                 start: `0% 80%`,
                 end: `100% 20%`,
-                markers: true,
+                // markers: true,
             },
         })
 
@@ -35,8 +35,7 @@ const Section3 = () => {
     <section className="h-[200vh] flex flex-col relative justify-start items-center w-full section3 overflow-hidden z-5">
       
         <p className="Font text-[5vw]/[5vw] tracking-[-0.2vw] text-center z-5 section3-text1 h-full">ENVOYÉ POUR LA PREMIERE FOIS EN 1996</p>
-        {/* <p className="text-green-800 Font text-[20vw] absolute bottom-0 tracking-[-0.8vw] z-0">8.000.000.000$</p> */}
-
+        
     </section>
   )
 }
