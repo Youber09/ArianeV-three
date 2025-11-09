@@ -58,8 +58,9 @@ const ThreeRocket = () => {
             .to(rocketRef.current.position, {
                 duration: 1,
                 x: 0,
-                y: 20,
-                z: 3
+                y: 100,
+                z: 3,
+                ease: "power4.in"
             })
 
             tl2.to(rocketRef.current.rotation, {
@@ -79,9 +80,10 @@ const ThreeRocket = () => {
             })
             .to(rocketRef.current.rotation, {
                 duration: 1,
-                x: RB * -30,
+                x: RB * 0,
                 y: RB * 720,
-                z: 0
+                z: 0,
+                ease: "power4.in"
             })
             
 
@@ -89,7 +91,7 @@ const ThreeRocket = () => {
 
     return (
         <>
-            <Rocket ref={rocketRef} position={[0, 10, 0]} rotation={[0, 0, 0]} scale={0.5} />
+            <Rocket ref={rocketRef}  position={[0, 10, 0]} rotation={[0, 0, 0]} scale={0.5} />
         </>
     )
 }

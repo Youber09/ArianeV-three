@@ -63,9 +63,9 @@ const Camera = () => {
       ease: `sine.in`
     }).to(camera.position, {
       duration: 1,
-      x:-1,
-      y:16,
-      z:3,
+      x:0,
+      y:30,
+      z:20,
       ease: `sine.in`
     })
     
@@ -103,8 +103,8 @@ const Camera = () => {
     }).to(camera.rotation, {
       duration: 1,
       ease: `power1.in`,
-      x: RB * 90,
-      y: RB * -10,
+      x: RB * 60,
+      y: RB * 0,
       z: 0
     })
 

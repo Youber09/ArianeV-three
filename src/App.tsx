@@ -4,6 +4,7 @@ import Section3 from "./components/Sections/Section3.js"
 import ThreeCanvas from "./components/ThreeCanvas.js"
 import Section4 from "./components/Sections/Section4.js"
 import PlaceHolder from "./components/Sections/PlaceHolder.js"
+import Section5 from "./components/Sections/Section5.js"
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className="-z-1 bg-radial from-white to-black/60 fixed bottom-0 h-screen w-screen"></div>
+      <div className="-z-1 bg-radial from-white to-fuchsia-500 fixed bottom-0 h-screen w-screen"></div>
       
       <ThreeCanvas />
 
@@ -24,6 +25,8 @@ function App() {
       <Section4 />
 
       <PlaceHolder />
+
+      <Section5 />
 
     </>
   )

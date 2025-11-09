@@ -1,25 +1,37 @@
-import { AmbientLight, Scene } from "three"
+import { AmbientLight, Scene, SphereGeometry } from "three"
 import { Edges, Environment, OrbitControls, RoundedBox, TransformControls } from "@react-three/drei"
 
-const Boxes = ({position, rotation, scale}: {position: number[], rotation: number[], scale: number}) => {
+const Boxes = ({ position, rotation, scale }: { position: number[], rotation: number[], scale: number }) => {
   return (
     <>
-        <mesh position={position} rotation={rotation} scale={scale}>
-                      <boxGeometry args={[1, 1, 1]}/> {/* width, height, depth */}
-                      <meshBasicMaterial transparent color={"black"} opacity={1} /> {/* invisible faces */}
-                      <Edges color="white" />
+      <mesh position={position} rotation={rotation} scale={scale}>
+        <sphereGeometry args={[1, 1, 1]} /> 
+        <meshBasicMaterial transparent color={"black"} opacity={1} /> 
+        <Edges color="white" />
+
+        <RoundedBox
+          args={[2.5, 2.5, 2.5]} 
+          radius={0.3}            
+          smoothness={8}          
+          position={[0, 1.25, 0]}
+          castShadow
+          receiveShadow
+        >
+
+          
+          <meshStandardMaterial
+  color="fuchsia"
+  emissive="fuchsia"
+  emissiveIntensity={1.5}
+  metalness={7}
+  transparent
+  opacity={1}
+  roughness={0.3}
+/>
+        </RoundedBox>
+
         
-                      <RoundedBox args={[1, 1, 1]} scale={1.2} radius={0.1} smoothness={4}>
-                        {/* Transparent shell */}
-                        <meshStandardMaterial
-                          color="white"
-                          transparent
-                          opacity={0.2}
-                        />
-                        {/* Visible edges */}
-                        <Edges color="white" />
-                      </RoundedBox>
-                    </mesh>
+      </mesh>
     </>
   )
 }

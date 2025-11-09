@@ -2,7 +2,7 @@
 
 const PlaceHolder = () => {
   return (
-    <div className="h-[200vh]"></div>
+    <div className="h-[50vh]"></div>
   )
 }
 

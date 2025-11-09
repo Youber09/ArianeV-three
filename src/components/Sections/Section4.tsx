@@ -31,7 +31,7 @@ const Section4 = () => {
   return (
     <section className="h-[200vh] flex flex-col relative justify-start items-center w-full section4 overflow-hidden ">
       
-        <p className="text-green-800 Font text-[20vw] tracking-[-0.8vw] z-0 absolute w-[315vw] left-[100vw] section4-text1 h-full">8 MILLIARDS DOLLARS</p>
+        <p className="text-black Font text-[20vw] tracking-[-0.8vw] z-0 absolute w-[315vw] left-[100vw] section4-text1 h-full drop-shadow-black">8 MILLIARDS DOLLARS</p>
 
     </section>
   )
