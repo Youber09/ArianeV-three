@@ -11,18 +11,18 @@ const floatFixer = (float: number) => {
 
 const RandomBoxes = () => {
 
-    const boxes = Array.from({ length: 200 }, () => ({
+    const boxes = Array.from({ length: 100 }, () => ({
         position: [
             floatFixer(THREE.MathUtils.randFloatSpread(150)),
             floatFixer(THREE.MathUtils.randFloatSpread(150)),
-            floatFixer(THREE.MathUtils.randFloatSpread(150)),
+            floatFixer(THREE.MathUtils.randFloatSpread(100)),
         ],
         rotation: [
             THREE.MathUtils.randFloatSpread(10),
             THREE.MathUtils.randFloatSpread(5),
             THREE.MathUtils.randFloatSpread(10),
         ],
-        scale: (THREE.MathUtils.randFloatSpread(5) + 0.2)
+        scale: (Math.random() * 2)
     }))
 
 

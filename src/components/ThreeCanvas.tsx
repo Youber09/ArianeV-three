@@ -20,9 +20,9 @@ const ThreeCanvas = () => {
 
             <spotLight position={[0, 20, 10]} angle={10} penumbra={0} decay={0} intensity={Math.PI * 1} color={`skyblue`} />
 
-            <spotLight position={[-20, 20, 10]} angle={10} penumbra={0} decay={0} intensity={Math.PI * 0.5} color={`pink`}  />
+            <spotLight position={[-20, 20, 10]} angle={10} penumbra={0} decay={0} intensity={Math.PI * 1} color={`pink`}  />
 
-            <ambientLight intensity={0.2} />
+            <ambientLight intensity={0} />
             <Earth />
             <ThreeRocket />
 
@@ -30,6 +30,7 @@ const ThreeCanvas = () => {
               
               <RandomBoxes />
             </Float>
+
 
             
           <Camera />

@@ -20,10 +20,10 @@ const Boxes = ({ position, rotation, scale }: { position: number[], rotation: nu
 
           
           <meshStandardMaterial
-  color="fuchsia"
-  emissive="fuchsia"
-  emissiveIntensity={1.5}
-  metalness={7}
+  color="black"
+  emissive="black"
+  emissiveIntensity={2}
+  metalness={20}
   transparent
   opacity={1}
   roughness={0.3}

@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className="-z-1 bg-radial from-white to-fuchsia-500 fixed bottom-0 h-screen w-screen"></div>
+      <div className="-z-1 bg-radial from-black/20 to-white-500 fixed bottom-0 h-screen w-screen"></div>
       
       <ThreeCanvas />
 
