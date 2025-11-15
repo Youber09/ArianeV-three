@@ -30,7 +30,7 @@ const Section5 = () => {
             translateY: `100%`,
             scrollTrigger: {
                 trigger: `.section5-img1-1`,
-                markers: true,
+                // markers: true,
                 start: `-100% 50%`,
                 // toggleActions: `start`,
                 end: `50% top`
@@ -38,26 +38,70 @@ const Section5 = () => {
             ease: `sine.out`
         })
 
+        gsap.from(`.explosionLink`, {
+            duration: 0.8,
+            opacity: 0,
+            translateX: `200%`,
+            scrollTrigger: {
+                trigger: `.explosionLink`,
+                // markers: true,
+                start: `-100% 50%`,
+                // toggleActions: `restart`,
+                end: `50% top`
+            },
+            ease: `sine.out`
+        })
+
+        const split2 = new SplitText(`.explainingSection`, {type: "lines"})
+        const lines2 = split2.lines
+
+        gsap.from(lines2, {
+            scrollTrigger: {
+                trigger: `.explainingSection`,
+                // toggleActions: `restart`,
+                start: `top 60%`
+            },
+            stagger: 0.2,
+            duration: 1,
+            translateX: `-100%`,
+            opacity: 0
+        })
+
     }, [])
 
 
 
     return (
-        <div className="h-[500vh] bg-black section5 flex flex-col items-center overflow-hidden">
-            <PlaceHolder />
+        <div className="h-[530vh] max-[1000px]:h-[350vh] bg-black section5 flex flex-col items-center overflow-hidden">
+            <PlaceHolder bg="" />
             <div className="text-white text-[5vw]/[5vw] Font z-5 text-center  flex flex-col justify-center items-center max-[1000px]:text-[8.4vw]/[8.4vw] p-[5%]">
                 <p className="section5-text1 overflow-hidden">UN INCIDENT EST<br />MALHEUREUSEMENT ARRIVÉ</p>
                 <div className="relative mt-[5%] section5-img1">
                     <img className="size-[40vw] max-[1000px]:size-[80vw] object-cover z-1 rounded-[1vw] section5-img1-1 relative " src="https://miro.medium.com/v2/resize:fit:1400/1*psxlqpwJPPhY_xkJp8r_PA.png" alt="" />
                 </div>
-                <a href="https://www.youtube.com/watch?v=c9Hf4qTxdxs" target="_blank" className="z-5 text-[2vw] bg-white rounded-[0.5vw] w-[30vw] p-[1%] py-[0%] text-black flex justify-around items-center mt-[5%] transition-all hover:scale-101 cursor-pointer group">REGARDER LA VIDEO <Eye /></a>
+                <div className="explosionLink">
+                    <a href="https://www.youtube.com/watch?v=c9Hf4qTxdxs" target="_blank" className=" z-5 bg-white rounded-[0.5vw] w-[30vw] p-[1%] py-[0%] text-black flex justify-around items-center mt-[5%] transition-all hover:scale-101 cursor-pointer group text-[2vw] max-[1000px]:w-[40vw] max-[1000px]:text-[3vw]">REGARDER LA VIDEO <Eye /></a>
+                </div>
             </div>
 
-            <div className="p-[5%] mt-[50vh]">
-                <p className="text-white Font text-[5vw]/[5vw] text-center section5-text-2">
-                    LES EMPLOYÉS DE L'ESA ONT REPRIS UN BOUT DE CODE DE ARIANE IV
+            <div className="p-[5%] mt-[30vh] explainingSection">
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wide">
+                    LES EMPLOYÉS DE L'ESA ONT REPRIS UN BOUT DE CODE DE ARIANE-IV, MAIS ILS ONT OUBLIÉ DE FAIRE LES CHANGEMENT NECESSAIRE, POUR L'ADAPTER À ARIANE-V, QUI TRAVAILLE AVEC DES VALEURS BEACOUP PLUS IMPORTANTES.
                 </p>
             </div>
+
+            <div className="p-[5%] mt-[30vh] explainingSection">
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wide">
+                    CHAQUE VARIABLE AVAIT UNE LIMITE RÉALISTE, POUR EVITER LES ERREURS, ET ARIANE-V DÉPASSE LES LIMITES IMPOSÉES DANS LE CODE DE ARIANE-IV, ÇA A DONC CAUSE UNE ERREUR. 
+                </p>
+            </div>
+
+            <div className="p-[5%] mt-[30vh] explainingSection">
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wide">
+                    C'EST COMME VERSER 10 LITRES DE LAIT DANS UN VERS, SAUF QUE LE TAPIS SUR LEQUEL ÇA TOMBE, COUTE <br /> <span className="text-red-600 relative before:absolute before:h-full before:w-full before:bg-red-600 before:blur-[7vw] before:z-0 z-1">370 MILLION DE $</span>
+                </p>
+            </div>
+
         </div>
     )
 }

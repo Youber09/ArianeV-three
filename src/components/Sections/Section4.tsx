@@ -22,6 +22,18 @@ const Section4 = () => {
             translateX: `-140%`
         })
 
+        gsap.to(`.openingBlock`,{
+            scrollTrigger: {
+                trigger: `.openingBlock`,
+                // markers: true,
+                start: `top 40%`,
+                end: `100% top`,
+                scrub: 0.5,
+                pin: true,
+            },
+            scale: 18
+        })
+
         
 
 
@@ -29,9 +41,10 @@ const Section4 = () => {
 
 
   return (
-    <section className="h-[200vh] flex flex-col relative justify-start items-center w-full section4 overflow-hidden ">
+    <section className="h-[200vh] flex flex-col relative justify-start items-center w-full section4 overflow-hidden">
       
         <p className="text-black Font text-[20vw] tracking-[-0.8vw] z-0 absolute w-[315vw] left-[100vw] section4-text1 h-full drop-shadow-black">8 MILLIARDS DOLLARS</p>
+        <div className="absolute bg-black h-[10vh] w-[10vw] rounded-full top-[60%] openingBlock"></div>
 
     </section>
   )

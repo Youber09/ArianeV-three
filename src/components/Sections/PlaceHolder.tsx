@@ -1,8 +1,8 @@
 
 
-const PlaceHolder = () => {
+const PlaceHolder = ({bg}: {bg: string}) => {
   return (
-    <div className="h-[50vh]"></div>
+    <div className={`h-[50vh] ${bg}`}></div>
   )
 }
 

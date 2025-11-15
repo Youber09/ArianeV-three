@@ -92,6 +92,7 @@ const ThreeRocket = () => {
     return (
         <>
             <Rocket ref={rocketRef}  position={[0, 10, 0]} rotation={[0, 0, 0]} scale={0.5} />
+            
         </>
     )
 }

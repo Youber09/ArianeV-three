@@ -24,7 +24,7 @@ function App() {
 
       <Section4 />
 
-      <PlaceHolder />
+      {/* <PlaceHolder bg="bg-black" /> */}
 
       <Section5 />
 
