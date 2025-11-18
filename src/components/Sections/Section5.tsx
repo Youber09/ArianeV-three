@@ -61,7 +61,7 @@ const Section5 = () => {
                 // toggleActions: `restart`,
                 start: `top 60%`
             },
-            stagger: 0.2,
+            stagger: 0.1,
             duration: 1,
             translateX: `-100%`,
             opacity: 0
@@ -72,7 +72,7 @@ const Section5 = () => {
 
 
     return (
-        <div className="h-[530vh] max-[1000px]:h-[350vh] bg-black section5 flex flex-col items-center overflow-hidden">
+        <div className=" bg-black section5 flex flex-col items-center overflow-hidden">
             <PlaceHolder bg="" />
             <div className="text-white text-[5vw]/[5vw] Font z-5 text-center  flex flex-col justify-center items-center max-[1000px]:text-[8.4vw]/[8.4vw] p-[5%]">
                 <p className="section5-text1 overflow-hidden">UN INCIDENT EST<br />MALHEUREUSEMENT ARRIVÉ</p>
@@ -101,6 +101,8 @@ const Section5 = () => {
                     C'EST COMME VERSER 10 LITRES DE LAIT DANS UN VERS, SAUF QUE LE TAPIS SUR LEQUEL ÇA TOMBE, COUTE <br /> <span className="text-red-600 relative before:absolute before:h-full before:w-full before:bg-red-600 before:blur-[7vw] before:z-0 z-1">370 MILLION DE $</span>
                 </p>
             </div>
+            
+            <PlaceHolder bg="black" />
 
         </div>
     )

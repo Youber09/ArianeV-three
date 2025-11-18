@@ -4,6 +4,9 @@ import Camera from "./Camera"
 import RandomBoxes from "./RandomBoxes"
 import ThreeRocket from "./Canvas/ThreeRocket.js"
 import { Float, OrbitControls, Text3D } from "@react-three/drei"
+import Floor from "./Floor.js"
+import Desk from "./Canvas/DeskModel.js"
+import NikeModel from "./Canvas/Nike.js"
 // import { Environment } from "@react-three/drei"
 
 const RB = Math.PI / 180
@@ -23,16 +26,24 @@ const ThreeCanvas = () => {
 
             <spotLight position={[-20, 20, 10]} angle={10} penumbra={0} decay={0} intensity={Math.PI * 1} color={`pink`}  />
 
+            <pointLight position={[0,160,53]} intensity={300} distance={20} />
+
             <ambientLight intensity={0} />
             <Earth />
             <ThreeRocket />
+
+            <Desk />
+
+            <NikeModel />
 
             <Float floatIntensity={1} speed={0.7}>
               
               <RandomBoxes />
             </Float>
-            
-          <Camera />
+
+            <Floor />
+            {/* <OrbitControls /> */}
+            <Camera />
         </Canvas>
 
       </div>

@@ -109,12 +109,38 @@ const Camera = () => {
     })
 
 
+    //new timelines
+    //
+    //
+
+    const tl_2 = gsap.timeline({
+      scrollTrigger: {
+        // markers: true,
+        scrub: 2,
+        trigger: `.section6`,
+        start: `bottom bottom`,
+        end: `600% top`
+      }
+    })
+
+    const tl2_2 = gsap.timeline({
+      scrollTrigger: {
+        markers: true,
+        scrub: 2,
+        trigger: `.section6`,
+        start: `bottom bottom`,
+        end: `600% top`
+      }
+    })
+
+    tl_2.to(camera.position, {
+
+    })
+
+
   }, [])
 
-  
 
-    
-    console.log(camera.position)
 
   return null
 }

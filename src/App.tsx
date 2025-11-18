@@ -5,6 +5,7 @@ import ThreeCanvas from "./components/ThreeCanvas.js"
 import Section4 from "./components/Sections/Section4.js"
 import PlaceHolder from "./components/Sections/PlaceHolder.js"
 import Section5 from "./components/Sections/Section5.js"
+import Section6 from "./components/Sections/Section6.js"
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
       {/* <PlaceHolder bg="bg-black" /> */}
 
       <Section5 />
+
+      <Section6 />
 
     </>
   )

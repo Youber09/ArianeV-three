@@ -10,7 +10,7 @@ const Earth = () => {
 
   return (
     <>
-        <mesh position={[0,0,0]} rotation={[RB * -40 ,RB * 10,0]} scale={10}>
+        <mesh position={[0,0,0]} rotation={[RB * -40 ,RB * 10,0]} scale={10} castShadow>
             <sphereGeometry args={[1, 64, 64]} /> {/* radius, widthSeg, heightSeg */}
             <meshStandardMaterial map={texture} normalMap={imp}
             roughness={1}
