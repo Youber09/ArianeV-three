@@ -5,8 +5,8 @@ const RB = Math.PI / 180
 
 
 const Earth = () => {
-    const texture = useTexture("../../public/earth.jpg")
-    const imp = useTexture("../../public/earth_normal_map.jpg")
+    const texture = useTexture("../../earth.jpg")
+    const imp = useTexture("../../earth_normal_map.jpg")
 
   return (
     <>

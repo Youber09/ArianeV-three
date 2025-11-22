@@ -3,8 +3,8 @@ import { useTexture } from "@react-three/drei"
 
 const Floor = () => {
 
-    const texture = useTexture("../../public/floorTexture.jpg")
-    const imp = useTexture("../../public/marsNormalMap.jpg")
+    const texture = useTexture("../../floorTexture.jpg")
+    const imp = useTexture("../../marsNormalMap.jpg")
 
     console.log(texture, imp)
 
