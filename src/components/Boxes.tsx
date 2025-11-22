@@ -1,7 +1,7 @@
 import { AmbientLight, Scene, SphereGeometry } from "three"
 import { Edges, Environment, OrbitControls, RoundedBox, TransformControls } from "@react-three/drei"
 
-const Boxes = ({ position, rotation, scale }: { position: number[], rotation: number[], scale: number }) => {
+const Boxes = ({ position, rotation, scale }: { position: [number, number, number], rotation: [number, number, number], scale: number }) => {
   return (
     <>
       <mesh position={position} rotation={rotation} scale={scale}>

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex bg-black flex-col z-50 w-screen p-[10%] items-center justify-around mb-[-1%]">
             <div className="flex flex-col items-center justify-center">
                 <p className="text-white Font text-[5vw] text-center">INSPIRATION</p>
-                <iframe className="w-[70vw] aspect-video" src="https://www.youtube.com/embed/wTZcGN4N334?si=AddbTcSY885jgLJ4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className="w-[70vw] aspect-video" src="https://www.youtube.com/embed/wTZcGN4N334?si=AddbTcSY885jgLJ4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
             <div className="flex flex-col items-center justify-center">
                 <p className="text-white Font text-[5vw] text-center mt-[25%]">CODE SOURCE</p>

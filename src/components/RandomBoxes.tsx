@@ -11,7 +11,7 @@ const floatFixer = (float: number) => {
 
 const RandomBoxes = () => {
 
-    const boxes = Array.from({ length: 100 }, () => ({
+    const boxes : {position: [number, number, number], rotation: [number, number, number], scale: number}[] = Array.from({ length: 100 }, () => ({
         position: [
             floatFixer(THREE.MathUtils.randFloatSpread(150)),
             floatFixer(THREE.MathUtils.randFloatSpread(150)),
@@ -28,8 +28,8 @@ const RandomBoxes = () => {
 
     return (
         <>
-            {boxes.map((b,i) => (
-                <Boxes key={i} position={b.position} rotation={b.rotation} scale={b.scale} />
+            {boxes.map(({position, rotation, scale},i) => (
+                <Boxes key={i} position={position} rotation={rotation} scale={scale} />
             ))}
         </>
     )
