@@ -85,20 +85,50 @@ const Section5 = () => {
             </div>
 
             <div className="p-[5%] mt-[30vh] explainingSection">
-                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wide">
-                    LES EMPLOYÉS DE L'ESA ONT REPRIS UN BOUT DE CODE DE ARIANE-IV, MAIS ILS ONT OUBLIÉ DE FAIRE LES CHANGEMENT NECESSAIRE, POUR L'ADAPTER À ARIANE-V, QUI TRAVAILLE AVEC DES VALEURS BEACOUP PLUS IMPORTANTES.
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wider">
+                    LES EMPLOYÉS DE L'ESA ONT REPRIS UN BOUT DE CODE DE ARIANE-IV, MAIS ILS ONT OUBLIÉ DE FAIRE LES CHANGEMENT NECESSAIRE, POUR L'ADAPTER À ARIANE-V, QUI TRAVAILLE AVEC DES VALEURS BEACOUP PLUS IMPORTANTES CAR C'EST BEACOUP PLUS PUISSANT.
                 </p>
             </div>
 
             <div className="p-[5%] mt-[30vh] explainingSection">
-                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wide">
-                    CHAQUE VARIABLE AVAIT UNE LIMITE RÉALISTE, POUR EVITER LES ERREURS, ET ARIANE-V DÉPASSE LES LIMITES IMPOSÉES DANS LE CODE DE ARIANE-IV, ÇA A DONC CAUSE UNE ERREUR. 
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wider">
+                    CHAQUE VARIABLE AVAIT UNE LIMITE RÉALISTE, POUR ÉCONOMISER LA MÉMOIRE ET LA VITESSE DE CALCUL, CAR LA POSSIBILITÉ DE VALEURS PLUS GRANDES IMPLIQUE PLUS DE CALCUL, ET ARIANE-V DÉPASSE LA LIMITE IMPOSÉE DANS LE CODE DE ARIANE-IV. 
                 </p>
             </div>
 
             <div className="p-[5%] mt-[30vh] explainingSection">
-                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wide">
-                    C'EST COMME VERSER 10 LITRES DE LAIT DANS UN VERS, SAUF QUE LE TAPIS SUR LEQUEL ÇA TOMBE, COUTE <br /> <span className="text-red-600 relative before:absolute before:h-full before:w-full before:bg-red-600 before:blur-[7vw] before:z-0 z-1">370 MILLION DE $</span>
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wider">
+                    C'EST COMME VERSER 10 LITRES D'EAU DANS UN VERS, CA CAUSE UN BUG OVERFLOW.
+                </p>
+            </div>
+
+            <div className="p-[5%] mt-[30vh] explainingSection">
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wider">
+                    LA VARIABLE QUI A CAUSÉ LE PROBLEM EST CELLE DE LA ACCÉLÉRATION HORIZONTALE DU VAISSEAU.
+                </p>
+            </div>
+
+            <div className="p-[5%] mt-[30vh] explainingSection">
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wider">
+                    LE SYSTEM DE NAVIGATION A SIGNALÉ UNE ERREUR ET C'ÉTAIT AU TOUR DU SYSTEM DE SECOURS DE PRENDRE LE CONTROLE, SAUF QUE C'ÉTAIT LE MEME CODE, LE SYSTEM PRINCIPAL N'AVAIT DONC PAS DE BONNE VALEURS ET ÇA A CRASH APRÉS 37 SECONDES.
+                </p>
+            </div>
+
+            <div className="p-[5%] mt-[30vh] explainingSection">
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wider">
+                    POURQUOI 37 SECONDES? CAR LE VAISSEAU DÉCOLE VERTICALEMENT AU DÉBUT MAIS APRÉS QUELQUE SECONDES ÇA COMMENCE A TOURNER LENTEMENT POUR ÉCONOMISER LE CARBURANT.
+                </p>
+            </div>
+
+            <div className="p-[5%] mt-[30vh] explainingSection">
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wider">
+                    C'EST À CE MOMENT QUE LA VALEUR DE LA VARIABLE DE LA ACCÉLÉRATION HORIZONTALE AUGMENTE ET LA LIMITE DE 32768 A ÉTÉ DÉPASSÉ.
+                </p>
+            </div>
+
+            <div className="p-[5%] mt-[30vh] explainingSection">
+                <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wider">
+                    LE COUT TOTAL DU MATÉRIEL QUI A EXPLOSÉ EST DE 370 MILLIONS DE DOLLARS.
                 </p>
             </div>
             

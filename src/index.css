@@ -4,3 +4,6 @@
     font-family: "Fugaz One", sans-serif;
 }
 
+.explainingSection {
+    z-index: 5;
+}

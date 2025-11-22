@@ -21,7 +21,7 @@ const ThreeRocket = () => {
                 scrub: 2,
                 trigger: `.section1`,
                 start: `bottom bottom`,
-                end: `600% top`
+                end: `800% top`
             }
             })
 
@@ -60,6 +60,12 @@ const ThreeRocket = () => {
                 x: 0,
                 y: 100,
                 z: 3,
+                ease: "power4.in"
+            }).to(rocketRef.current.position, {
+                duration: 2,
+                x: 0,
+                y: 150,
+                z: 42,
                 ease: "power4.in"
             })
 

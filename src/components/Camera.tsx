@@ -117,24 +117,41 @@ const Camera = () => {
       scrollTrigger: {
         // markers: true,
         scrub: 2,
-        trigger: `.section6`,
-        start: `bottom bottom`,
-        end: `600% top`
+        trigger: `.sectionObserver`,
+        start: `top bottom`,
+        end: `100% bottom`
       }
     })
 
     const tl2_2 = gsap.timeline({
       scrollTrigger: {
-        markers: true,
+        // markers: true,
         scrub: 2,
-        trigger: `.section6`,
-        start: `bottom bottom`,
-        end: `600% top`
+        trigger: `.sectionObserver`,
+        start: `top bottom`,
+        end: `100% bottom`
       }
     })
 
     tl_2.to(camera.position, {
+      x:0,
+      y:160,
+      z:60,
+      ease: `power1.inOut`
+    })
 
+    tl2_2.to(camera.rotation, {
+      x: RB * -60,
+      y:0,
+      z:0,
+      ease: `sine.out`,
+      duration: 1
+    }).to(camera.rotation, {
+      x: RB * -10,
+      y: 0,
+      z: 0,
+      ease: `sine.out`,
+      duration: 1
     })
 
 

@@ -6,6 +6,9 @@ import Section4 from "./components/Sections/Section4.js"
 import PlaceHolder from "./components/Sections/PlaceHolder.js"
 import Section5 from "./components/Sections/Section5.js"
 import Section6 from "./components/Sections/Section6.js"
+import Section7 from "./components/Sections/Section7.js"
+import Section8 from "./components/Sections/Section8.js"
+import Footer from "./components/Sections/Footer.js"
 
 function App() {
 
@@ -29,7 +32,25 @@ function App() {
 
       <Section5 />
 
-      <Section6 />
+      <div className="sectionObserver">
+
+        <Section6 />
+
+        <Section7 text={`SI ILS AVAIENT TESTÉ, CONFIRMÉ Y AURA PAS DE PERTE`} />
+
+        <Section7 text="LEUR MANQUE DE PRINCIPES SIMPLES, C'EST SOIT ON RECYCLER BIEN DU CODE, SOIT ON LE RECYCLE PAS DU TOUT" />
+
+        <Section7 text="MAIS CETTE GAFFE A QUAND MEME CRÉE QUELQUE CHOSE DE MÉMORABLE" />
+
+        <Section8 />
+
+        
+
+      </div>
+
+      <Footer />
+
+      
 
     </>
   )
