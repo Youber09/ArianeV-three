@@ -1,5 +1,5 @@
-import { AmbientLight, Scene, SphereGeometry } from "three"
-import { Edges, Environment, OrbitControls, RoundedBox, TransformControls } from "@react-three/drei"
+
+import { Edges,  RoundedBox} from "@react-three/drei"
 
 const Boxes = ({ position, rotation, scale }: { position: [number, number, number], rotation: [number, number, number], scale: number }) => {
   return (
