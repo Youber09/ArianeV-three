@@ -14,10 +14,19 @@ export default function Rocket(props) {
   const { nodes, materials } = useGLTF('/ariane_5_model.glb')
   return (
     <group {...props} dispose={null}>
-      <instancedMesh args={[nodes.Tube_7_Sec_rockets_black_0.geometry, materials.Sec_rockets_black, 16]} instanceMatrix={nodes.Tube_7_Sec_rockets_black_0.instanceMatrix} />
       <group scale={0.01}>
         <group position={[90, 405, 0]}>
           <group position={[-180, 0, 0]}>
+            <group position={[0, -122.656, 0]}>
+              <mesh geometry={nodes.Tube_7_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, -220.844, 0]} />
+              <mesh geometry={nodes.Tube_6_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, -92.094, 0]} />
+              <mesh geometry={nodes.Tube_5_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, -154.594, 0]} />
+              <mesh geometry={nodes.Tube_4_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, 95.406, 0]} />
+              <mesh geometry={nodes.Tube_3_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, -29.594, 0]} />
+              <mesh geometry={nodes.Tube_2_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, 32.906, 0]} />
+              <mesh geometry={nodes.Tube_1_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, 161.906, 0]} />
+              <mesh geometry={nodes.Tube_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, 206.906, 0]} />
+            </group>
             <group position={[0, -0.062, 0]}>
               <group position={[0, -378.665, 0]}>
                 <group position={[0, -12.993, 0]}>
@@ -56,6 +65,16 @@ export default function Rocket(props) {
                 <mesh geometry={nodes.Tube_3_3__0.geometry} material={materials.Tube_7_2__0} position={[0, 206.906, 0]} />
               </group>
               <mesh geometry={nodes.Sec_rocket_text_Rocket_sec_text_1.geometry} material={materials.Rocket_sec_text} position={[90, 270, 0]} />
+            </group>
+            <group position={[0, -122.656, 0]}>
+              <mesh geometry={nodes.Tube_7_3_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, -220.844, 0]} />
+              <mesh geometry={nodes.Tube_6_3_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, -92.094, 0]} />
+              <mesh geometry={nodes.Tube_5_3_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, -154.594, 0]} />
+              <mesh geometry={nodes.Tube_4_3_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, 95.406, 0]} />
+              <mesh geometry={nodes.Tube_3_4_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, -29.594, 0]} />
+              <mesh geometry={nodes.Tube_2_4_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, 32.906, 0]} />
+              <mesh geometry={nodes.Tube_1_4_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, 161.906, 0]} />
+              <mesh geometry={nodes.Tube_4_4_Sec_rockets_black_0.geometry} material={materials.Sec_rockets_black} position={[0, 206.906, 0]} />
             </group>
             <group position={[0, -0.062, 0]} rotation={[Math.PI, 0, -Math.PI]}>
               <group position={[0, -404.938, 0]}>
