@@ -1,6 +1,6 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
-import { SplitText } from "gsap/all"
+import { SplitText } from "gsap/SplitText"
 
 
 const Section8 = () => {

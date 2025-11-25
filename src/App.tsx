@@ -35,7 +35,7 @@ function App() {
 
         <Section6 />
 
-        <Section7 text={`SI ILS AVAIENT TESTÉ, CONFIRMÉ Y AURA PAS DE PERTE`} />
+        <Section7 text={`SI ILS AVAIENT TESTÉ, CONFIRMÉ Y AURAIT PAS DE PERTE`} />
 
         <Section7 text="LEUR MANQUE DE PRINCIPES SIMPLES, C'EST SOIT ON RECYCLER BIEN DU CODE, SOIT ON LE RECYCLE PAS DU TOUT" />
 

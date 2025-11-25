@@ -13,9 +13,11 @@ import { useGLTF } from '@react-three/drei'
 export default function Nike(props) {
   const { nodes, materials } = useGLTF('/nike_tn.glb')
   return (
-    <group castShadow {...props} dispose={null}>
+    <group {...props} dispose={null}>
       <group scale={0.01}>
-        <mesh geometry={nodes.LORES__0.geometry} material={materials['Scene_-_Root']} position={[9.235, 4.575, 2.633]} rotation={[-3.072, 0, -Math.PI]} scale={109.652} />
+        <group position={[9.235, 4.575, 2.633]} rotation={[-3.072, 0, -Math.PI]} scale={109.652}>
+          <mesh geometry={nodes.LORES__0.geometry} material={materials['Scene_-_Root']} position={[-0.006, 0.017, 0.003]} scale={0.138} />
+        </group>
       </group>
     </group>
   )

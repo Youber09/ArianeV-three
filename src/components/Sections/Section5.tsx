@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import PlaceHolder from "./PlaceHolder"
-import { SplitText } from "gsap/all"
+import { SplitText } from "gsap/SplitText"
 import Eye from "../svgs/Eye"
 
 
