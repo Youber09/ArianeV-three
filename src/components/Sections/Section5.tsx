@@ -86,7 +86,7 @@ const Section5 = () => {
 
             <div className="p-[5%] mt-[30vh] explainingSection">
                 <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wider">
-                    LES EMPLOYÉS DE L'ESA (EUROPEAN SPACE AGENCY) ONT REPRIS UN BOUT DE CODE DE ARIANE-IV, MAIS ILS ONT OUBLIÉS DE FAIRE LES CHANGEMENT NÉCESSAIRE, POUR L'ADAPTER À ARIANE-V, QUI TRAVAILLE AVEC DES VALEURS BEACOUP PLUS IMPORTANTES CAR C'EST BEAUCOUP PLUS PUISSANT.
+                    LES EMPLOYÉS DE L'ESA (EUROPEAN SPACE AGENCY) ONT REPRIS UN BOUT DE CODE DE ARIANE-IV, MAIS ILS ONT ASSUMÉS QUE LE CODE DE ARIANE-IV MARCHERA, DONC PAS BESOIN DE L'ADAPTER À ARIANE-V, QUI TRAVAILLE AVEC DES VALEURS BEACOUP PLUS IMPORTANTES CAR C'EST BEAUCOUP PLUS PUISSANT.
                 </p>
             </div>
 
@@ -116,7 +116,7 @@ const Section5 = () => {
 
             <div className="p-[5%] mt-[30vh] explainingSection">
                 <p className="text-white Font text-[3vw]/[6vw] text-center section5-text-2 max-[1000px]:text-[5vw]/[10vw] tracking-wider">
-                    POURQUOI 37 SECONDES? CAR LE VAISSEAU DÉCOLE VERTICALEMENT AU DÉBUT MAIS APRÉS QUELQUES SECONDES ÇA COMMENCE A TOURNER LENTEMENT POUR ÉCONOMISER LE CARBURANT.
+                    POURQUOI 37 SECONDES? CAR LE VAISSEAU DÉCOLE VERTICALEMENT AU DÉBUT MAIS APRÉS QUELQUES SECONDES ÇA COMMENCE À TOURNER LENTEMENT POUR ÉCONOMISER LE CARBURANT.
                 </p>
             </div>
 
